@@ -8,4 +8,8 @@ add_executable(SockNet main.cpp
         Lib/Ws.h
         Utils/Utils.cpp
         Utils/Utils.h
+        Lib/Wsa.h
+        Utils/Singleton.h
+        Lib/Socket.inl
+        Lib/Socket.h
 )
