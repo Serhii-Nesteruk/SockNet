@@ -3,13 +3,9 @@ project(SockNet)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(SockNet main.cpp
-        Lib/Ws.cpp
-        Lib/Ws.h
-        Utils/Utils.cpp
-        Utils/Utils.h
-        Lib/Wsa.h
-        Utils/Singleton.h
-        Lib/Socket.inl
-        Lib/Socket.h
-)
+add_subdirectory(Lib)
+add_subdirectory(Utils)
+
+add_executable(SockNet main.cpp)
+
+target_link_libraries(SockNet PUBLIC Socket Utils)

@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Ws.h"
-#include "../Utils/Singleton.h" // TODO:
+#include "Singleton.h"
 
 class Wsa : public Utils::Singleton<Wsa>
 {
